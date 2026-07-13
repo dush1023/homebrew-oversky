@@ -1,0 +1,2 @@
+# The release pipeline (.github/workflows/daemon-release.yml in dush1023/OverSky)
+# renders Formula/oversky.rb here on every daemon-v* tag. Do not hand-edit.
