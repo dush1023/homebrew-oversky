@@ -13,12 +13,12 @@
 # lockstep with scripts/install-daemon.sh's download base.
 #
 # Placeholders (all single-quoted so shell interpolation can't clash):
-#   0.8.25                — numeric version, no leading "v" (e.g. 0.2.3)
-#   https://updates.oversky.ai/daemon/releases/0.8.25/oversky-darwin-arm64       — CloudFront feed URL for oversky-darwin-arm64
-#   a035efb0525128f0421bd0f0ef892156b72a92bbfeae33c8bfec69fdb549f473       — sha256 of that asset
-#   https://updates.oversky.ai/daemon/releases/0.8.25/oversky-darwin-x64, b0be8f1eec9516a6789bd03c93aae7cd40a1066639d5cb7699e0cd636866d5ba
-#   https://updates.oversky.ai/daemon/releases/0.8.25/oversky-linux-x64,  be91ef0b8c6d2320f926654b4e8a5ac8f476f13b6b1b2b9237df59d732675544
-#   https://updates.oversky.ai/daemon/releases/0.8.25/oversky-linux-arm64, 422563a5522497d48e114d2b3b9fe3a6ffb7786ae10ab1e80368c74e56a79f27
+#   0.8.26                — numeric version, no leading "v" (e.g. 0.2.3)
+#   https://updates.oversky.ai/daemon/releases/0.8.26/oversky-darwin-arm64       — CloudFront feed URL for oversky-darwin-arm64
+#   1b0fa4263505ee48114d8ad5bee3d67b8a40fc32cf178e4a8a153e9bf95fcbde       — sha256 of that asset
+#   https://updates.oversky.ai/daemon/releases/0.8.26/oversky-darwin-x64, 95dee1ca7428186ab2219fc725672b8b23fca7a969276498417f279b90f32dec
+#   https://updates.oversky.ai/daemon/releases/0.8.26/oversky-linux-x64,  1bd1972c0e955121bc2fe12bd8bd5f4cd8e541852131a279bf1b71baaa96f1ae
+#   https://updates.oversky.ai/daemon/releases/0.8.26/oversky-linux-arm64, 8bb300b95365755bd368f037771cd5a5d3464f6d952a4bbf9fe967e9f38fdf62
 #
 # Install path for users (once the tap exists):
 #   brew tap dush1023/oversky
@@ -36,27 +36,27 @@ class Oversky < Formula
   desc "Local AI agent executor for OverSky"
   homepage "https://github.com/dush1023/OverSky"
   license "UNLICENSED"
-  version "0.8.25"
+  version "0.8.26"
 
   on_macos do
     on_arm do
-      url "https://updates.oversky.ai/daemon/releases/0.8.25/oversky-darwin-arm64"
-      sha256 "a035efb0525128f0421bd0f0ef892156b72a92bbfeae33c8bfec69fdb549f473"
+      url "https://updates.oversky.ai/daemon/releases/0.8.26/oversky-darwin-arm64"
+      sha256 "1b0fa4263505ee48114d8ad5bee3d67b8a40fc32cf178e4a8a153e9bf95fcbde"
     end
     on_intel do
-      url "https://updates.oversky.ai/daemon/releases/0.8.25/oversky-darwin-x64"
-      sha256 "b0be8f1eec9516a6789bd03c93aae7cd40a1066639d5cb7699e0cd636866d5ba"
+      url "https://updates.oversky.ai/daemon/releases/0.8.26/oversky-darwin-x64"
+      sha256 "95dee1ca7428186ab2219fc725672b8b23fca7a969276498417f279b90f32dec"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://updates.oversky.ai/daemon/releases/0.8.25/oversky-linux-arm64"
-      sha256 "422563a5522497d48e114d2b3b9fe3a6ffb7786ae10ab1e80368c74e56a79f27"
+      url "https://updates.oversky.ai/daemon/releases/0.8.26/oversky-linux-arm64"
+      sha256 "8bb300b95365755bd368f037771cd5a5d3464f6d952a4bbf9fe967e9f38fdf62"
     end
     on_intel do
-      url "https://updates.oversky.ai/daemon/releases/0.8.25/oversky-linux-x64"
-      sha256 "be91ef0b8c6d2320f926654b4e8a5ac8f476f13b6b1b2b9237df59d732675544"
+      url "https://updates.oversky.ai/daemon/releases/0.8.26/oversky-linux-x64"
+      sha256 "1bd1972c0e955121bc2fe12bd8bd5f4cd8e541852131a279bf1b71baaa96f1ae"
     end
   end
 
