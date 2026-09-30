@@ -15,12 +15,12 @@
 # bytes, and this formula's checksums come from those entries.
 #
 # Placeholders (all single-quoted so shell interpolation can't clash):
-#   0.8.81                — numeric version, no leading "v" (e.g. 0.2.3)
-#   https://updates.skrr.ai/daemon/releases/0.8.81/oversky-darwin-arm64       — CloudFront feed URL for oversky-darwin-arm64
-#   89e53c77f78162f2814e436ecbdd178ab4fa7d7dcde413cd4c4de25bd61576b6       — sha256 of that asset
-#   https://updates.skrr.ai/daemon/releases/0.8.81/oversky-darwin-x64, c3febe97926285b3078ee742a680fcf201a0cafb238210708828cca5b9a8cbf1
-#   https://updates.skrr.ai/daemon/releases/0.8.81/oversky-linux-x64,  ea66a0587b3125bfe74f8a0ce4699811f5713354058efc490811e5c80705441e
-#   https://updates.skrr.ai/daemon/releases/0.8.81/oversky-linux-arm64, d34858f5786f42a08657fec06bea1734161822b974ea137d65a6602ae83160be
+#   0.8.82                — numeric version, no leading "v" (e.g. 0.2.3)
+#   https://updates.skrr.ai/daemon/releases/0.8.82/oversky-darwin-arm64       — CloudFront feed URL for oversky-darwin-arm64
+#   6dc213ee669c9bf4da4a08f0067928a19f7637f794b39d1bf7bb8aaf0b7a6a68       — sha256 of that asset
+#   https://updates.skrr.ai/daemon/releases/0.8.82/oversky-darwin-x64, 9956cd3ec045085162acbcbe37629e63ddf63eba43f0070cbb237bf9a130568b
+#   https://updates.skrr.ai/daemon/releases/0.8.82/oversky-linux-x64,  ffb62c2438ebd59c53eb752b82344eade11bb2a40c3d7cce87cb4baaea397e0f
+#   https://updates.skrr.ai/daemon/releases/0.8.82/oversky-linux-arm64, 9dfef79dffedf14cde5742f2128eaede5ee4110ded0765f9b81011d6fcbfb819
 #
 # Install path for users (once the tap exists):
 #   brew tap dush1023/oversky
@@ -38,27 +38,27 @@ class Oversky < Formula
   desc "Local AI agent executor for OverSky"
   homepage "https://github.com/dush1023/OverSky"
   license "UNLICENSED"
-  version "0.8.81"
+  version "0.8.82"
 
   on_macos do
     on_arm do
-      url "https://updates.skrr.ai/daemon/releases/0.8.81/oversky-darwin-arm64"
-      sha256 "89e53c77f78162f2814e436ecbdd178ab4fa7d7dcde413cd4c4de25bd61576b6"
+      url "https://updates.skrr.ai/daemon/releases/0.8.82/oversky-darwin-arm64"
+      sha256 "6dc213ee669c9bf4da4a08f0067928a19f7637f794b39d1bf7bb8aaf0b7a6a68"
     end
     on_intel do
-      url "https://updates.skrr.ai/daemon/releases/0.8.81/oversky-darwin-x64"
-      sha256 "c3febe97926285b3078ee742a680fcf201a0cafb238210708828cca5b9a8cbf1"
+      url "https://updates.skrr.ai/daemon/releases/0.8.82/oversky-darwin-x64"
+      sha256 "9956cd3ec045085162acbcbe37629e63ddf63eba43f0070cbb237bf9a130568b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://updates.skrr.ai/daemon/releases/0.8.81/oversky-linux-arm64"
-      sha256 "d34858f5786f42a08657fec06bea1734161822b974ea137d65a6602ae83160be"
+      url "https://updates.skrr.ai/daemon/releases/0.8.82/oversky-linux-arm64"
+      sha256 "9dfef79dffedf14cde5742f2128eaede5ee4110ded0765f9b81011d6fcbfb819"
     end
     on_intel do
-      url "https://updates.skrr.ai/daemon/releases/0.8.81/oversky-linux-x64"
-      sha256 "ea66a0587b3125bfe74f8a0ce4699811f5713354058efc490811e5c80705441e"
+      url "https://updates.skrr.ai/daemon/releases/0.8.82/oversky-linux-x64"
+      sha256 "ffb62c2438ebd59c53eb752b82344eade11bb2a40c3d7cce87cb4baaea397e0f"
     end
   end
 
